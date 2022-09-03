@@ -30,6 +30,10 @@ public class Model {
         }
         String newLastName=lastName.substring(0,1)+lmask+lastName.substring(lastName.length()-1);
 
+        //Output masked full name
+        String newFullName=newFirstName+newLastName;
+
+        System.out.println(newFullName);
 
 
 
