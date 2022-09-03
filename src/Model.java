@@ -16,12 +16,23 @@ public class Model {
         //Mask first name
         String fmask="";
         int fmaskN=firstName.substring(1,firstName.length()-1).length();
-        for(int i=0; i<fmask;i++){
+        for(int i=0; i<fmaskN;i++){
             fmask+="*";
         }
+        String newFirstName= firstName.substring(0,1) +fmask + firstName.substring(firstName.length()-1);
+        System.out.println(newFirstName);
+
+        //Mask last name
+        String lmask="";
+        int lmaskN=lastName.substring(1, lastName.length()-1).length();
+        for(int j=0; j<lmaskN; j++){
+            lmask+="*";
+        }
+        String newLastName=lastName.substring(0,1)+lmask+lastName.substring(lastName.length()-1);
 
 
-        System.out.println(firstName);
+
+
 
     }
 }
