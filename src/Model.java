@@ -13,6 +13,14 @@ public class Model {
         String firstName=fullName.substring(0,splitName);
         String lastName=fullName.substring(splitName+1);
 
+        //Mask first name
+        String fmask="";
+        int fmaskN=firstName.substring(1,firstName.length()-1).length();
+        for(int i=0; i<fmask;i++){
+            fmask+="*";
+        }
+
+
         System.out.println(firstName);
 
     }
